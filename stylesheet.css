@@ -1,0 +1,350 @@
+/* Global */
+body {
+	font-family: Merriweather, serif; /* #3. Import at least two external fonts. (This one is for the body.)*/
+	max-width: 1580px;
+	margin:0;
+}
+
+
+
+header {
+	display: flex;
+	align-items: center;
+	background: black;
+	padding: 0 2%;
+	color: white;
+	//border-bottom: #CB3234 3px solid;
+	font-family: Muli, sans-serif; /* #3. Import at least two external fonts. (This is for the header.)*/
+}
+
+header h1 {
+	flex: 1;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+
+nav li {
+	display: inline;
+	padding: 7px;
+}
+
+a {
+	text-decoration: none;
+	color: #354C63;
+}
+
+a:hover:not(.figure) {
+	color: #4D182C; /* #1. hover states on all links that change color when hovered.*/
+}
+
+nav a {
+	color: #D3CFC5;
+}
+
+
+.container {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+
+/* homepage showcase */
+#showcase {
+	height: 400px;
+	background: url(the-creative-exchange-373981-unsplash.jpg);
+	background-size: cover;
+	padding: 10%;
+	display: flex;
+}
+
+#showcase h2 {
+	font-size: 3.5em;
+	margin: 0;
+}
+
+#showcase p {
+	font-size: 2em;
+	font-family: Muli;
+}
+
+#showcase .container {
+	//background: rgba(211,207,197, .8);
+	//background: rgba(138,199,183,.8);
+	background: rgba(77,24,44, .9);
+	max-width: 516px;
+	padding: 30px;
+	border: 5px solid #0c0407;
+	border-radius: 2px;
+	color: white;
+}
+
+
+/* featured section */
+
+
+#features {
+
+	display: flex; /* #10. Use flexbox on your images and links for responsiveness.*/
+	background: #D3CFC5;
+
+}
+
+figure {
+
+  text-align: center;
+  border-radius: 5px; /* #4. Use border-radius on your images. (Images are contained in figures. This puts border-radius on tops of images and bottoms of figcaptions.)*/
+  overflow: hidden; /* #4. (This is to hide the top edges of images underneath the figure.)*/
+  background: white;
+  border: 2px solid silver;
+  box-shadow: 0 5px 5px #ccc; /* #5. Use box-shadow on your images.*/
+
+  
+
+
+}
+
+figure:hover {
+	border: 2px solid #354C63;
+}
+
+ figure h3 {
+ 	font-family: Muli;
+ 	text-align: center;
+ 	margin: 0 0 7px 0;
+ }
+
+figure img {
+
+  max-width: 100%;
+  /*border-radius: 7px; */ 
+  max-height: 250px;
+  width: 100%;
+
+}
+
+figcaption {
+	padding: 5px 15px;
+	text-align: left;
+}
+
+/* About Page */
+
+.banner {
+	height: 100px;
+	padding: 10%;
+	//display: flex;
+	overflow: hidden;
+}
+
+#aboutBanner {
+	background: url(the-creative-exchange-373981-unsplash.jpg);
+	background-size: cover;
+}
+
+
+
+#socialMedia {
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 2px solid silver;
+	background: #847463;
+}
+
+#socialMedia img {
+	height: 35px;
+	width: 35px;
+	margin: 10px;
+	//border-radius: 50%;
+}
+
+#socialMedia a {
+	background: white;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin: 3px;
+}
+
+#meBar {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	//align-items: center;
+	position: relative;
+	bottom: 155px;
+
+}
+
+#meBar h3 {
+	text-align: center;
+	font-family: Muli;
+	//margin-top: 0;
+}
+
+#meBar p {
+	padding: 0 10%;
+}
+
+#meBar ul {
+	list-style-type: none;
+}
+
+/*icons underneath my portrait*/
+#meBar li.location:before {
+	content: "\00a0\00a0\00a0\00a0\00a0" ;
+	//display: inline-block;
+	background: url(005-pin.png);
+	background-repeat: no-repeat;	
+}
+
+#meBar li.games:before {
+	content: "\00a0\00a0\00a0\00a0\00a0";
+	background: url(001-game.png);
+	background-repeat: no-repeat;
+}
+
+#meBar li.books:before {
+	content: "\00a0\00a0\00a0\00a0\00a0";
+	background: url(002-tool.png);
+	background-repeat: no-repeat;
+}
+
+#meBar li.heart:before {
+	content: "\00a0\00a0\00a0\00a0\00a0";
+	background: url(004-favorite.png);
+	background-repeat: no-repeat;
+}
+
+
+#portrait {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	//position: relative;
+	//bottom: 70px;
+	margin: auto;
+	border: 5px solid white;
+}
+
+#aboutSection {
+	display: flex;
+	align-items: baseline;
+	position: relative;
+	background: #D3CFC5;
+}
+
+.aboutBlurb {
+	flex: 4;
+	background: #f8f7f5;
+	padding: 15px;
+	border: 2px solid #272528;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px #ccc;
+	//border-radius: 5px;
+	position: relative;
+	bottom: 140px;
+	margin-right: 7px;
+}
+
+#aboutBlurb h2 {
+	border-bottom: 1px solid silver;
+}
+
+
+/* Contact Page */
+
+#contactBanner {
+	background: url(rawpixel-247360-unsplash.jpg);
+	background-size: cover;
+	border-bottom: 3px solid #3B2915;
+
+}
+
+/* #6. Center the form on the contact page.
+// #7. Put a border around the form and use padding to create spacing between the border and the form's content.
+// #8. Inputs inside the form should have spacing between them.*/
+
+#mailMessage {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background: #E6E8E7;
+}
+#formContainer {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #3B2915;
+  padding: 75px 0;
+  //background: #ecdbc6;
+  background: #D3CFC5;
+}
+
+form {
+  border: 3px solid #3B2915;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 2px;
+  background: #eff1ef;
+ 
+ 
+}
+
+input[type="submit"] {
+	background: #25A381;
+	color: white;
+	border: none;
+	height: 50px;
+	float: right;
+	border: 1px solid #3B2915;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+label {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*footer*/
+footer {
+	background: black;
+	color: white;
+	margin-bottom: 0;
+	height: 100px;
+	padding: 50px;
+	border-top: #4D182C 3px solid;;
+	
+}
+
+footer p {
+	//text-align: center;
+	//padding: 50%;
+
+}
+
+
+/* #9. Media queries that change the layout of the navigation and images */
+@media screen and (max-width: 768px) { 
+	#features, header {
+		flex-direction: column; /* 2. Center your site's header on the page. (Centered when under 768px.)*/
+	}
+
+	h1 {
+		margin-bottom: 0 !important;
+	}
+	#aboutSection {
+		flex-direction: column;
+		align-items: stretch;
+
+
+	}
+	
+}
